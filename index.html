@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$WENWEN</title>
+    <link rel="icon" type="image/x-icon" href="src/base.png">
+    <link rel="stylesheet" href="src/main.css">
+    <link rel="stylesheet" href="src/styles.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>$WENWEN</h1>
+        <div class="row">
+            <div class="col-md-6 left">
+                <div class="video-wrapper">
+                    <video id="myVideo" controls autoplay muted loop>
+                        <source src="wenwen.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <div class="col-md-6 right">
+                <div class="description">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit possimus suscipit placeat omnis asperiores blanditiis, sed dicta, nostrum odit quas, veritatis labore autem magni quo doloribus laboriosam distinctio? Amet, doloremque.</p>
+                </div>
+                <div class="button-group">
+                    <a href="" class="buy-btn">Buy Here</a>
+                    <a href="" class="twitter-btn">Twitter</a>
+                    <a href="" class="telegram-btn">Telegram</a>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>© WENWEN 2024.</p>
+        </footer>
+    </div>
+
+    <script>
+        document.body.addEventListener('click', function() {
+            var video = document.getElementById('myVideo');
+            video.muted = false;
+            video.play();
+        });
+    </script>
+</body>
+</html>

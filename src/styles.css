@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+body {
+    font-family: "Nerko One", cursive;
+    background-color: #ccd5ae;
+    color: #ef3054;
+}
+
+h1{
+    margin: 1rem auto;
+    text-align: center;
+    font-size: 8rem;
+    opacity: 0; /* Start hidden for animation */
+    transform: scale(0.5); /* Start scaled down for animation */
+    animation: grow 2s ease-in-out infinite; /* Apply infinite animation */
+}
+
+@keyframes grow {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.container{
+    padding: 1rem;
+}
+
+.video-wrapper{
+    margin: auto;
+    max-width: 60%;
+}
+
+.video-wrapper video{
+    width: 100%;
+}
+
+.right{
+    align-items: center;
+    margin: auto;
+    text-align: center;
+}
+
+.description{
+    font-size: 1.5rem;
+    color: #183642;
+}
+
+.button-group{
+    margin: 2rem auto;
+
+}
+
+.buy-btn, .twitter-btn, .telegram-btn{
+    font-size: 2rem;
+    display: block;
+    padding: 1rem 3rem;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 500px;
+    width: 50%;
+    margin: 1.5rem auto;
+    color: white;
+}
+
+.buy-btn{
+    background-color: #ef3054;
+}
+
+.buy-btn:hover{
+    background-color: black;
+    color: #ef3054;
+}
+
+.twitter-btn, .telegram-btn{
+    background-color: #183642;
+}
+
+.twitter-btn:hover, .telegram-btn:hover{
+    color: #183642;
+    background-color: white;
+}
+
+footer {
+    text-align: center;
+    color: gray;
+    margin: 2rem auto;
+}
